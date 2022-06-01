@@ -4,7 +4,7 @@ formatter: "markdown table"
 
 content: |-
   # Terraform ACI Tenant Module
-  Create and ACI Tenant for Cloud APIC deployed in AWS.
+  Create and ACI Tenant for Cloud APIC in AWS User Account.
 
   ## Examples
 
