@@ -1,0 +1,28 @@
+version: ">= v0.16.0"
+
+formatter: "markdown table"
+
+content: |-
+  # Terraform ACI Tenant Module
+  Manages ACI Tenant
+  Location in GUI:
+  `Tenants`
+  ## Examples
+
+  ### Example AWS Tenant
+  ```hcl
+  {{ include "./example/main.tf" }}
+  ```
+
+  {{ .Requirements }}
+  {{ .Providers }}
+  {{ .Inputs }}
+  {{ .Outputs }}
+  {{ .Resources }}
+
+output:
+  file: README.md
+  mode: replace
+
+sort:
+  enabled: false
