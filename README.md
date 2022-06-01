@@ -41,7 +41,7 @@ module "aws_aci_tenant" {
 
 | Name | Description |
 |------|-------------|
-| <a name="output_aci_tenant_dn"></a> [aci\_tenant\_dn](#output\_aci\_tenant\_dn) | n/a |
+| <a name="output_aci_tenant_dn"></a> [aci\_tenant\_dn](#output\_aci\_tenant\_dn) | Outputs the newly created Tenant ID for consumption in subsequent modules or resources |
 
 ## Resources
 
