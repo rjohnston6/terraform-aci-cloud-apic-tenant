@@ -3,6 +3,7 @@ resource "aci_tenant" "tenant" {
   description = var.tenant_description
 }
 
+# Associate new tenant with AWS Account ID
 resource "aci_cloud_aws_provider" "capic_aws_provider" {
   tenant_dn   = aci_tenant.tenant.id
   description = "aws account configuration"
