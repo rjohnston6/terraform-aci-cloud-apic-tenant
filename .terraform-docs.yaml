@@ -4,12 +4,12 @@ formatter: "markdown table"
 
 content: |-
   # Terraform ACI Tenant Module
-  Manages ACI Tenant
-  Location in GUI:
-  `Tenants`
+  Create and ACI Tenant for Cloud APIC deployed in AWS.
+
   ## Examples
 
   ### Example AWS Tenant
+
   ```hcl
   {{ include "./example/main.tf" }}
   ```
