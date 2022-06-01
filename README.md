@@ -3,9 +3,7 @@
 
 Create and ACI Tenant for Cloud APIC in AWS User Account.
 
-## Examples
-
-### Example AWS Tenant
+## Example AWS Tenant Creation
 
 ```hcl
 module "aws_aci_tenant" {
@@ -35,9 +33,9 @@ module "aws_aci_tenant" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_tenant_name"></a> [tenant\_name](#input\_tenant\_name) | n/a | `string` | n/a | yes |
-| <a name="input_tenant_description"></a> [tenant\_description](#input\_tenant\_description) | n/a | `string` | `null` | no |
-| <a name="input_aws_account"></a> [aws\_account](#input\_aws\_account) | n/a | <pre>object({<br>    id         = string<br>    is_trusted = string<br>  })</pre> | n/a | yes |
+| <a name="input_tenant_name"></a> [tenant\_name](#input\_tenant\_name) | Name of managed tenant. | `string` | n/a | yes |
+| <a name="input_tenant_description"></a> [tenant\_description](#input\_tenant\_description) | Optional description for managed tenant. | `string` | `null` | no |
+| <a name="input_aws_account"></a> [aws\_account](#input\_aws\_account) | AWS Account ID to associate tenant with and trusted state (yes/no), see Cisco Cloud APIC User Guide for more details | <pre>object({<br>    id         = string<br>    is_trusted = string<br>  })</pre> | n/a | yes |
 
 ## Outputs
 

@@ -7,9 +7,7 @@ content: |-
 
   Create and ACI Tenant for Cloud APIC in AWS User Account.
 
-  ## Examples
-
-  ### Example AWS Tenant
+  ## Example AWS Tenant Creation
 
   ```hcl
   {{ include "./example/main.tf" }}
