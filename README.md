@@ -1,7 +1,6 @@
 <!-- BEGIN_TF_DOCS -->
 # Terraform Cloud ACI Tenant Module
 
-
 Create and ACI Tenant for Cloud APIC in AWS User Account.
 
 ## Examples
