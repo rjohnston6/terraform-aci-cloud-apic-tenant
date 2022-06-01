@@ -4,6 +4,7 @@ formatter: "markdown table"
 
 content: |-
   # Terraform Cloud ACI Tenant Module
+
   Create and ACI Tenant for Cloud APIC in AWS User Account.
 
   ## Examples
@@ -15,9 +16,13 @@ content: |-
   ```
 
   {{ .Requirements }}
+
   {{ .Providers }}
+
   {{ .Inputs }}
+
   {{ .Outputs }}
+
   {{ .Resources }}
 
 output:
