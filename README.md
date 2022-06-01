@@ -7,7 +7,7 @@ Create and ACI Tenant for Cloud APIC in AWS User Account.
 
 ```hcl
 module "aws_aci_tenant" {
-  source             = "github.com/rjohnston6/terraform-aci-cloud-apic-aws-tenant"
+  source             = "rjohnston6/terraform-aci-cloud-apic-aws-tenant"
   tenant_name        = "terraform_tenant"
   tenant_description = "Created with Terraform" # Optional
   aws_account = {
