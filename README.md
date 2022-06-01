@@ -1,5 +1,6 @@
 <!-- BEGIN_TF_DOCS -->
 # Terraform Cloud ACI Tenant Module
+
 Create and ACI Tenant for Cloud APIC in AWS User Account.
 
 ## Examples
@@ -23,11 +24,13 @@ module "aws_aci_tenant" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_aci"></a> [aci](#requirement\_aci) | >=2.2.1 |
+
 ## Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_aci"></a> [aci](#provider\_aci) | >=2.2.1 |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -35,11 +38,13 @@ module "aws_aci_tenant" {
 | <a name="input_tenant_name"></a> [tenant\_name](#input\_tenant\_name) | n/a | `string` | n/a | yes |
 | <a name="input_tenant_description"></a> [tenant\_description](#input\_tenant\_description) | n/a | `string` | `null` | no |
 | <a name="input_aws_account"></a> [aws\_account](#input\_aws\_account) | n/a | <pre>object({<br>    id         = string<br>    is_trusted = string<br>  })</pre> | <pre>{<br>  "id": null,<br>  "is_trusted": "no"<br>}</pre> | no |
+
 ## Outputs
 
 | Name | Description |
 |------|-------------|
 | <a name="output_aci_tenant_dn"></a> [aci\_tenant\_dn](#output\_aci\_tenant\_dn) | n/a |
+
 ## Resources
 
 | Name | Type |
