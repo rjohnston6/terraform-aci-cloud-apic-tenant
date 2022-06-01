@@ -12,8 +12,4 @@ variable "aws_account" {
     id         = string
     is_trusted = string
   })
-  default = {
-    id         = null
-    is_trusted = "no"
-  }
 }

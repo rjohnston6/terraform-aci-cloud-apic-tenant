@@ -37,7 +37,7 @@ module "aws_aci_tenant" {
 |------|-------------|------|---------|:--------:|
 | <a name="input_tenant_name"></a> [tenant\_name](#input\_tenant\_name) | n/a | `string` | n/a | yes |
 | <a name="input_tenant_description"></a> [tenant\_description](#input\_tenant\_description) | n/a | `string` | `null` | no |
-| <a name="input_aws_account"></a> [aws\_account](#input\_aws\_account) | n/a | <pre>object({<br>    id         = string<br>    is_trusted = string<br>  })</pre> | <pre>{<br>  "id": null,<br>  "is_trusted": "no"<br>}</pre> | no |
+| <a name="input_aws_account"></a> [aws\_account](#input\_aws\_account) | n/a | <pre>object({<br>    id         = string<br>    is_trusted = string<br>  })</pre> | n/a | yes |
 
 ## Outputs
 
