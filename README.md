@@ -1,9 +1,24 @@
 <!-- BEGIN_TF_DOCS -->
 # Terraform Cloud ACI Tenant Module
 
-Create and ACI Tenant for Cloud APIC in AWS User Account.
+Create and ACI Tenant for Cloud APIC in AWS User Account. When creating a new Tenant in Cisco Cloud APIC for AWS two items are required.
+1. The Tenant Name
+2. The AWS Account ID to associate the Tenant with.
+
+When executing using Terraform this requires 2 resources to be defined to simplify further this simple module takes in the required variables and creates the new tenant.
+Using this module one could manage multiple tenants as part of a terraform plan.
+
+## Cloud APIC Tenant Creation workflow (manual)
+
+Accessed in GUI ```Application Management > Tenants > Actions >> Create Tenant```
+
+!(/example/img/capic-tenant-ui.jpg)
 
 ## Example AWS Tenant Creation
+
+Using the module creates the tenant with the supplied name and Account ID. The output provides the DN of the created tenant for use in additional modules or resources.
+
+!(/example/img/capic-terraform-tenant-workflow.jpg)
 
 ```hcl
 module "aws_aci_tenant" {
@@ -17,6 +32,10 @@ module "aws_aci_tenant" {
   }
 }
 ```
+
+## Acknowledgements
+
+Would like to acknowledge [Marina Ferreira](https://github.com/marinalf)'s repo [marinalf/cloudaci-demo-terraform-aws](https://github.com/marinalf/cloudaci-demo-terraform-aws). The work from this repo provides additional information on deploying components in Cloud ACI.
 
 ## Requirements
 
