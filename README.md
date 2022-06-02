@@ -12,13 +12,13 @@ Using this module one could manage multiple tenants as part of a terraform plan.
 
 Accessed in GUI ```Application Management > Tenants > Actions >> Create Tenant```
 
-![capic-tenant-ui](/example/img/capic-tenant-ui.jpg)
+![capic-tenant-ui](/img/capic-tenant-ui.jpg)
 
 ## Example AWS Tenant Creation
 
 Using the module creates the tenant with the supplied name and Account ID. The output provides the DN of the created tenant for use in additional modules or resources.
 
-![workflow-diagram](/example/img/capic-terraform-tenant-workflow.jpg)
+![workflow-diagram](/img/capic-terraform-tenant-workflow.jpg)
 
 ```hcl
 module "aws_aci_tenant" {
