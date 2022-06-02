@@ -16,13 +16,13 @@ content: |-
 
   Accessed in GUI ```Application Management > Tenants > Actions >> Create Tenant```
 
-  !(/example/img/capic-tenant-ui.jpg)
+  ![capic-tenant-ui](/example/img/capic-tenant-ui.jpg)
 
   ## Example AWS Tenant Creation
 
   Using the module creates the tenant with the supplied name and Account ID. The output provides the DN of the created tenant for use in additional modules or resources.
 
-  !(/example/img/capic-terraform-tenant-workflow.jpg)
+  ![workflow-diagram](/example/img/capic-terraform-tenant-workflow.jpg)
 
   ```hcl
   {{ include "./example/main.tf" }}
