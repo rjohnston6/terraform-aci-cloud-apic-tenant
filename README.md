@@ -1,6 +1,8 @@
 <!-- BEGIN_TF_DOCS -->
 # Terraform Cloud ACI Tenant Module
 
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/rjohnston6/terraform-aci-cloud-apic-tenant)
+
 Create and ACI Tenant for Cloud APIC in AWS User Account. When creating a new Tenant in Cisco Cloud APIC for AWS two items are required.
 1. The Tenant Name
 2. The AWS Account ID to associate the Tenant with.
